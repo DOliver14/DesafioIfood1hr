@@ -1,0 +1,176 @@
+*{
+    scrollbar-width: none;
+}
+
+
+ody {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    color: #000000;
+}
+
+header {
+    text-align: center;
+    color: #ff0000;
+    background-color: white;
+    padding: 17px 70px;
+    background-color: rgba(230, 230, 230, 0.24);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ff0000;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ff0000; /* Cor de destaque */
+    color: white;
+}
+
+/* Search and Categories */
+.search-categories-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.navbar .cdt{
+    background-color: red;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar .Enp{
+    border: solid 1px;
+    font-size: 18px;
+    
+}
+
+
+/* CATEGORIA DA BARRA DE PESQUISA */
+.categories select,
+.search-bar input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    transition: border-color 0.3s;
+    color: black;
+}
+
+/* CATEGORIA DA TODAS AS CATEGORIAS DE COMIDAS/BEBIDAS */
+.cart {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.cart .img-bag{
+    width: 70px;
+    height: 70px;
+}
+
+.cart #total{
+    font-size: 30px;
+}
+
+.cart h2{
+    font-size: 35px;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dish {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #fff; /* Fundo dos pratos */
+}
+
+.dish:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dish img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.dish h3 {
+    color: #ff0000;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    font-size: 0.9em;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.remove-button {
+    color: #ff1744;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.remove-button:hover {
+    color: #ff0400;
+}
+
+#checkout-button {
+    background-color: #ff0000; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#checkout-button:hover {
+    background-color: #ff9800; /* Cor ao passar o mouse */
+}

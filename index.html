@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Talvez Seja o ifood!</h1>
+            <nav class="nav-links">
+                <a href="" class="Isc">Informe sua cidade</a>
+                <a href="#">Cadastro no Mercado</a>
+                <a href="#">Como Funciona</a>
+                <a href="#">Ajuda</a>
+                <a href="#" class="Enp">criar conta</a>
+                <a href="#" class="cdt">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-categories-container">
+        <div class="categories">
+            <select id="category-select" onchange="filterByCategory()">
+                <option value="">Todas as Categorias</option>
+                <option value="comida">Comida</option>
+                <option value="sobremesa">Sobremesa</option>
+                <option value="bebida">Bebida</option>
+            </select>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Pesquisar..." oninput="filterMenu()">
+        </div>
+    </div>
+
+    
+
+    <aside class="cart">
+        <h2>
+            <img src="imagem/605508_bag_buy_cart_item_sale_icon.png" class="img-bag">    
+        </h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: R$ 0.00</p>
+        <button id="checkout-button">Finalizar Pedido</button>
+    </aside>
+    
+
+
+
+    <main>
+        <div id="menu"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Restaurante</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
